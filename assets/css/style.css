@@ -1,0 +1,30 @@
+body{
+	margin: 0 auto;
+}
+nav{
+	background-color: #147AA7;
+	text-align: center;
+}
+nav img{
+	max-width: 8%;
+	padding: 1%;
+}
+section{
+	background-color: #1E8DC3;
+	padding-bottom: 40%;
+}
+.lista{
+	background-color: #147AA7;
+	margin: 2%;
+	border: none;
+	padding: 1%;
+	border-radius: 6px;
+}
+.botonGuardar{
+	background-color: #6EC158;
+	margin-left: 2%;
+	border: none;
+	color: white;
+	border-radius: 4px;
+	padding: 1%;
+}
