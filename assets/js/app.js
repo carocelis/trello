@@ -19,24 +19,69 @@ boton.addEventListener("click", function(){
 function add(){
 	/*if(event.keyCode == 13){*/
 		/*var textArea = document.createElement("textarea");*/
+		//declarar variables
+		var divPadre = document.getElementById("añadirLista");
+		divPadre.setAttribute("id", "divPadre");
+		
+		//crear boton
 		var boton = document.createElement("button");
 		var textBoton = document.createTextNode("Guardar");
 		boton.setAttribute("type", "button");
 		boton.classList.add("botonGuardar");
-		var divPadre = document.getElementById("añadirLista");
 		/*divPadre.appendChild(textArea);*/
+		//asignar padres
 		boton.appendChild(textBoton);
 		divPadre.appendChild(boton);
+		
+
+
 	
 		boton.addEventListener("click", function(){
-		var divSegundo = document.createElement("div");
-		var input = document.createElement("input");
-		var segundoBoton = document.createElement("button");
-		var textoSegundoBoton = document.createTextNode("Guardar");
-		divSegundo.appendChild(input);
-		segundoBoton.appendChild(textoSegundoBoton);
-		divSegundo.appendChild(segundoBoton);
-		containerTareas.appendChild(divSegundo);
-	})
+			var inputUno = document.getElementById("lista");
+			inputUno.setAttribute("id", "valor");
+			var valorInput = document.getElementById("valor").value;
+			document.getElementById("valor").value = "";
+
+			var parrafo = document.createElement("p");
+			var textoNuevo = document.createTextNode(valorInput);
+
+			var divSegundo = document.createElement("div");
+			divSegundo.setAttribute("id", "divSegundo");
+
+			var añadir = document.createElement("a");
+			añadir.setAttribute("href", "#");
+			var textoAñadir = document.createTextNode("Añandir una tarea");
+
+
+			var inputDos = document.createElement("input");
+			inputDos.setAttribute("placeholder", "Añadir una lista", "id", "inputDos");
+
+			var segundoBoton = document.createElement("button");
+			segundoBoton.setAttribute("id", "segundoBoton");
+
+			var textoSegundoBoton = document.createTextNode("Guardar");
+			//var textArea = document.createElement("textarea");
+
+			//divPadre.appendChild(textArea);
+			divSegundo.appendChild(inputDos);
+			segundoBoton.appendChild(textoSegundoBoton);
+			divSegundo.appendChild(segundoBoton);
+			containerTareas.appendChild(divSegundo);
+			parrafo.appendChild(textoNuevo);
+			divSegundo.appendChild(parrafo);
+			añadir.appendChild(textoAñadir);
+			divPadre.appendChild(añadir);
+			divSegundo.insertBefore(parrafo, inputDos);
+
+			añadir.addEventListener("click", function(){
+				var textArea = document.createElement("textarea");
+				//var add = document.createElement("a");
+				//add.setAttribute("href", "#");
+				//var textAdd = document.createTextNode("Añandir una tarea");
+				//add.appendChild(textAdd);
+				divPadre.appendChild(textArea);
+				//divPadre.appendChild(add);
+			})
+		})
 }
 

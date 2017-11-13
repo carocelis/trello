@@ -13,7 +13,7 @@ section{
 	background-color: #1E8DC3;
 	padding-bottom: 40%;
 }
-.lista{
+#lista{
 	background-color: #147AA7;
 	margin: 2%;
 	border: none;
@@ -26,5 +26,28 @@ section{
 	border: none;
 	color: white;
 	border-radius: 4px;
-	padding: 1%;
+	/*padding: 1%;*/
+}
+#divPadre{
+	float: left;
+	padding: 2%;
+	margin: 2%;
+	background-color: #E5E6E9;
+	border-radius: 5px;
+}
+#divSegundo{
+	display: inline-block;
+	padding: 2%;
+	background-color: #E5E6E9;
+	border-radius: 5px;
+	width: 18%;
+	margin: 2%;
+}
+#segundoBoton{
+	background-color: #6EC158;
+	margin-left: 2%;
+	border: none;
+	color: white;
+	border-radius: 4px;
+	/*padding: 1%;*/
 }
