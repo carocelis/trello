@@ -20,7 +20,7 @@ section{
 	padding: 1%;
 	border-radius: 6px;
 }
-.botonGuardar{
+.botonGuardar, #segundoBoton, #tercerBoton{
 	background-color: #6EC158;
 	margin-left: 2%;
 	border: none;
@@ -43,11 +43,6 @@ section{
 	width: 18%;
 	margin: 2%;
 }
-#segundoBoton{
-	background-color: #6EC158;
-	margin-left: 2%;
-	border: none;
-	color: white;
-	border-radius: 4px;
-	/*padding: 1%;*/
+.link{
+	display: block;
 }

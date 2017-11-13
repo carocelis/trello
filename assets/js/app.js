@@ -50,6 +50,7 @@ function add(){
 
 			var añadir = document.createElement("a");
 			añadir.setAttribute("href", "#");
+			añadir.setAttribute("class", "link")
 			var textoAñadir = document.createTextNode("Añandir una tarea");
 
 
@@ -75,11 +76,17 @@ function add(){
 
 			añadir.addEventListener("click", function(){
 				var textArea = document.createElement("textarea");
+				var tercerBoton = document.createElement("button");
+				tercerBoton.setAttribute("id", "tercerBoton")
+				tercerBoton.setAttribute("id", "tercerBoton");
+				var textoTercerBoton = document.createTextNode("Añadir");
 				//var add = document.createElement("a");
 				//add.setAttribute("href", "#");
 				//var textAdd = document.createTextNode("Añandir una tarea");
 				//add.appendChild(textAdd);
 				divPadre.appendChild(textArea);
+				tercerBoton.appendChild(textoTercerBoton);
+				divPadre.appendChild(tercerBoton);
 				//divPadre.appendChild(add);
 			})
 		})
